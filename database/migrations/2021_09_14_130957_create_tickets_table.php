@@ -18,7 +18,7 @@ class CreateTicketsTable extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->boolean('open')->default(true);
-            $table->foreignId('ticket_type')->constrained('ticket_types', 'type');
+            $table->foreignId('ticket_type_id')->constrained();
             $table->string('subject', 200);
             $table->foreignId('escalated')->nullable()->constrained('users')->default(null);
             $table->foreignId('opened_by')->nullable()->constrained('users')->default(null);

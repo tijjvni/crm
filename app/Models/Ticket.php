@@ -16,7 +16,7 @@ class Ticket extends Model
      */
     protected $fillable = [
         'open',
-        'ticket_type',
+        'ticket_type_id',
         'subject',
         'escalated',
         'opened_by',
@@ -31,12 +31,17 @@ class Ticket extends Model
     protected $casts = [
         'id' => 'integer',
         'open' => 'boolean',
-        'ticket_type' => 'integer',
+        'ticket_type_id' => 'integer',
         'escalated' => 'integer',
         'opened_by' => 'integer',
         'opened_for' => 'integer',
     ];
 
+
+    public function ticketType()
+    {
+        return $this->belongsTo(\App\Models\TicketType::class);
+    }
 
     public function ticketType()
     {

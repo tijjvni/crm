@@ -26,7 +26,7 @@ class TicketFactory extends Factory
     {
         return [
             'open' => $this->faker->boolean,
-            'ticket_type' => TicketType::factory()->create()->ticket_type,
+            'ticket_type_id' => TicketType::factory(),
             'subject' => $this->faker->regexify('[A-Za-z0-9]{200}'),
             'escalated' => User::factory(),
             'opened_by' => User::factory(),
