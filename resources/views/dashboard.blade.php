@@ -5,126 +5,122 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-
-
-            <div class="flex items-center justify-center min-h-screen bg-gray-900">
-	<div class="col-span-12">
-		<div class="overflow-auto lg:overflow-visible ">
-			<table class="table text-gray-400 border-separate space-y-6 text-sm">
-				<thead class="bg-gray-800 text-gray-500">
-					<tr>
-						<th class="p-3">Brand</th>
-						<th class="p-3 text-left">Category</th>
-						<th class="p-3 text-left">Price</th>
-						<th class="p-3 text-left">Status</th>
-						<th class="p-3 text-left">Action</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="bg-gray-800">
-						<td class="p-3">
-							<div class="flex align-items-center">
-								<img class="rounded-full h-12 w-12  object-cover" src="https://images.unsplash.com/photo-1613588718956-c2e80305bf61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="unsplash image">
-								<div class="ml-3">
-									<div class="">Appple</div>
-									<div class="text-gray-500">mail@rgmail.com</div>
-								</div>
-							</div>
-						</td>
-						<td class="p-3">
-							Technology
-						</td>
-						<td class="p-3 font-bold">
-							200.00$
-						</td>
-						<td class="p-3">
-							<span class="bg-green-400 text-gray-50 rounded-md px-2">available</span>
-						</td>
-						<td class="p-3 ">
-							<a href="#" class="text-gray-400 hover:text-gray-100 mr-2">
-								<i class="material-icons-outlined text-base">visibility</i>
-							</a>
-							<a href="#" class="text-gray-400 hover:text-gray-100  mx-2">
-								<i class="material-icons-outlined text-base">edit</i>
-							</a>
-							<a href="#" class="text-gray-400 hover:text-gray-100  ml-2">
-								<i class="material-icons-round text-base">delete_outline</i>
-							</a>
-						</td>
-					</tr>
-					<tr class="bg-gray-800">
-						<td class="p-3">
-							<div class="flex align-items-center">
-								<img class="rounded-full h-12 w-12   object-cover" src="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="unsplash image">
-								<div class="ml-3">
-									<div class="">Realme</div>
-									<div class="text-gray-500">mail@rgmail.com</div>
-								</div>
-							</div>
-						</td>
-						<td class="p-3">
-							Technology
-						</td>
-						<td class="p-3 font-bold">
-							200.00$
-						</td>
-						<td class="p-3">
-							<span class="bg-red-400 text-gray-50 rounded-md px-2">no stock</span>
-						</td>
-						<td class="p-3">
-							<a href="#" class="text-gray-400 hover:text-gray-100  mr-2">
-								<i class="material-icons-outlined text-base">visibility</i>
-							</a>
-							<a href="#" class="text-gray-400 hover:text-gray-100 mx-2">
-								<i class="material-icons-outlined text-base">edit</i>
-							</a>
-							<a href="#" class="text-gray-400 hover:text-gray-100 ml-2">
-								<i class="material-icons-round text-base">delete_outline</i>
-							</a>
-						</td>
-					</tr>
-					<tr class="bg-gray-800">
-						<td class="p-3">
-							<div class="flex align-items-center">
-								<img class="rounded-full h-12 w-12   object-cover" src="https://images.unsplash.com/photo-1600856209923-34372e319a5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2135&q=80" alt="unsplash image">
-								<div class="ml-3">
-									<div class="">Samsung</div>
-									<div class="text-gray-500">mail@rgmail.com</div>
-								</div>
-							</div>
-						</td>
-						<td class="p-3">
-							Technology
-						</td>
-						<td class="p-3 font-bold">
-							200.00$
-						</td>
-						<td class="p-3">
-							<span class="bg-yellow-400 text-gray-50  rounded-md px-2">start sale</span>
-						</td>
-						<td class="p-3">
-							<a href="#" class="text-gray-400 hover:text-gray-100 mr-2">
-								<i class="material-icons-outlined text-base">visibility</i>
-							</a>
-							<a href="#" class="text-gray-400 hover:text-gray-100 mx-2">
-								<i class="material-icons-outlined text-base">edit</i>
-							</a>
-							<a href="#" class="text-gray-400 hover:text-gray-100 ml-2">
-								<i class="material-icons-round text-base">delete_outline</i>
-							</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-</div>
-
-
+    <div class="container mx-auto p-5">
+        <section class="px-4 py-12 mx-auto w-full">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div class="flex-row items-center p-5 card">
+            <div class="flex items-center justify-center w-10 h-10 text-pink-700 bg-pink-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+            </svg>
+            </div>
+            <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">563</h2>
+            <p class="text-sm leading-none text-gray-600">Email Transactions</p>
             </div>
         </div>
+        <div class="flex-row items-center p-5 card">
+            <div class="flex items-center justify-center w-10 h-10 text-green-700 bg-green-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            </div>
+            <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">62</h2>
+            <p class="text-sm leading-none text-gray-600">Successful</p>
+            </div>
+        </div>
+        <div class="flex-row items-center p-5 card">
+            <div class="flex items-center justify-center w-10 h-10 text-red-700 bg-red-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+                <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clip-rule="evenodd"
+                />
+            </svg>
+            </div>
+            <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">24</h2>
+            <p class="text-sm leading-none text-gray-600">Failed</p>
+            </div>
+        </div>
+        <div class="flex-row items-center p-5 card">
+            <div class="flex items-center justify-center w-10 h-10 text-yellow-700 bg-yellow-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+                <path
+                fill-rule="evenodd"
+                d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+                clip-rule="evenodd"
+                />
+            </svg>
+            </div>
+            <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">12,655</h2>
+            <p class="text-sm leading-none text-gray-600">Click through rate</p>
+            </div>
+        </div>
+        </div>
+    </section>
+          
     </div>
+
+    <section class="px-4 py-12 mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div class="flex-row items-center p-5 card">
+        <div class="flex items-center justify-center w-10 h-10 text-pink-700 bg-pink-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">563</h2>
+            <p class="text-sm leading-none text-gray-600">Email Transactions</p>
+        </div>
+        </div>
+        <div class="flex-row items-center p-5 card">
+        <div class="flex items-center justify-center w-10 h-10 text-green-700 bg-green-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">62</h2>
+            <p class="text-sm leading-none text-gray-600">Successful</p>
+        </div>
+        </div>
+        <div class="flex-row items-center p-5 card">
+        <div class="flex items-center justify-center w-10 h-10 text-red-700 bg-red-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+            <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                clip-rule="evenodd"
+            />
+            </svg>
+        </div>
+        <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">24</h2>
+            <p class="text-sm leading-none text-gray-600">Failed</p>
+        </div>
+        </div>
+        <div class="flex-row items-center p-5 card">
+        <div class="flex items-center justify-center w-10 h-10 text-yellow-700 bg-yellow-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-5 h-5">
+            <path
+                fill-rule="evenodd"
+                d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+                clip-rule="evenodd"
+            />
+            </svg>
+        </div>
+        <div class="ml-3">
+            <h2 class="mb-1 text-lg font-bold leading-none text-gray-900 truncate">12,655</h2>
+            <p class="text-sm leading-none text-gray-600">Click through rate</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
 </x-app-layout>
