@@ -5,18 +5,9 @@
         </h2>
     </x-slot>
 
-    <section class="px-4 py-12 mx-auto max-w-7xl">
-  <div class="flex flex-wrap items-center justify-between mb-4 space-y-1">
-    <h2 class="text-xl font-semibold text-gray-900">Analytics Overview</h2>
-    <label>
-      <span class="sr-only">Select date range</span>
-      <select class="form-select form-select-sm">
-        <option>Last 7 days</option>
-        <option>Blue</option>
-      </select>
-    </label>
-  </div>
-  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+<section class="px-4 py-12 mx-auto max-w-7xl bg-white">
+
+  <div class="grid grid-cols-1 gap-5 md:grid-cols-4">
     <div class="p-6 card">
       <div class="flex items-start justify-between">
         <h2 class="mb-2 font-mono text-2xl font-light leading-none text-gray-900 truncate">23,455</h2>
