@@ -16,8 +16,9 @@
             <div class="flex p-2 bg-gray-50 text-primary h-8 rounded-b-md items-end">
                 <div class="flex items-center justify-between text-sm">
                     <div class="w-0 flex-1 flex items-center">
-                        <i class="fa fa-plus"></i> Create new
+                        <i class="fa fa-plus"></i>
                     </div>    
+                    <p class="flex-1"> Create new</p>
                 </div>                
             </div>
         </div>        
@@ -29,8 +30,9 @@
             <div class="flex p-2 bg-gray-50 text-primary h-8 rounded-b-md items-end">
                 <div class="flex items-center justify-between text-sm">
                     <div class="w-0 flex-1 flex items-center">
-                        <i class="fa fa-plus"></i> Create new
+                        <i class="fa fa-plus"></i>
                     </div>    
+                    <p class="flex-1"> Grant permission</p>
                 </div>                
             </div>
         </div>
@@ -42,8 +44,9 @@
             <div class="flex p-2 bg-gray-50 text-primary h-8 rounded-b-md items-end">
                 <div class="flex items-center justify-between text-sm">
                     <div class="w-0 flex-1 flex items-center">
-                        <i class="fa fa-plus"></i> Create new
+                        <i class="fa fa-plus"></i> 
                     </div>    
+                    <p class="flex-1"> View users</p>
                 </div>                
             </div>       
 
