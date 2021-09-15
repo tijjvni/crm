@@ -5,11 +5,7 @@
       </h2>
   </x-slot>
   <div class="container mx-auto p-5">
-    <div>
-      <div class="flex flex-wrap space-x-2 space-y-2">
-        <x-ui.metrics-dashboard icon="list" title="Tickets" value="2500"/>
-      </div>
-    </div>    
+    @livewire('dashboard.metrics')  
   </div>
     
 

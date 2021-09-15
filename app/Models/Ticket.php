@@ -42,11 +42,7 @@ class Ticket extends Model
     {
         return $this->belongsTo(\App\Models\TicketType::class);
     }
-
-    public function ticketType()
-    {
-        return $this->belongsTo(\App\Models\TicketType::class);
-    }
+    
 
     public function escalated()
     {
