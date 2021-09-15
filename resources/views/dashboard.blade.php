@@ -6,7 +6,7 @@
   </x-slot>
   <div class="container mx-auto p-5">
     <div>
-      <div class="flex gap-2 flex-wrap ">
+      <div class="flex flex-wrap space-x-2 space-y-2">
         <x-metrics-card/>
         <x-metrics-card/>
         <x-metrics-card/>
