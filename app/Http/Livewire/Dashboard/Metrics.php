@@ -17,13 +17,13 @@ class Metrics extends Component
     public function mount(){
         
         
-        $all = count(Ticket::where('opened_by',auth()->id())->get());
+        $this->all = count(Ticket::where('opened_by',auth()->id())->get());
         // $open = $ticket->where('open',true)->get();
         // $escalated = $ticket->whereNotNull('escalated')->get();
         // $solved = $ticket->where('open',false)->get();
-        $open = 0;
-        $escalated = 0;
-        $solved = 0;
+        $this->open = 0;
+        $this->escalated = 0;
+        $this->solved = 0;
 
 
     }
