@@ -6,7 +6,7 @@ use Livewire\Component;
 
 use App\Models\Ticket;
 
-class Metrics extends Component
+class TicketMetrics extends Component
 {
 
     public $all;
@@ -26,9 +26,8 @@ class Metrics extends Component
     }
 
 
-
     public function render()
     {
-        return view('livewire.dashboard.metrics');
+        return view('livewire.dashboard.ticket-metrics');
     }
 }

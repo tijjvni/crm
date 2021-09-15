@@ -5,11 +5,11 @@
       </h2>
   </x-slot>
   <div class="container mx-auto p-5">
-    @livewire('dashboard.metrics')  
+    @livewire('dashboard.tickets')  
+
+    @can('is_admin')
+      @livewire('dashboard.admin')  
+    @endcan
   </div>
     
-
-
-
-
 </x-app-layout>
