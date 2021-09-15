@@ -17,7 +17,7 @@ class Metrics extends Component
     public function mount(){
         
         
-        $all = count(Ticket::where('opened_by',auth()->id()));
+        $all = count(Ticket::where('opened_by',auth()->id())->get());
         // $open = $ticket->where('open',true)->get();
         // $escalated = $ticket->whereNotNull('escalated')->get();
         // $solved = $ticket->where('open',false)->get();
