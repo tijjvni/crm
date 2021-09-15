@@ -15,11 +15,16 @@ class Metrics extends Component
     public $solved;
 
     public function mount(){
-        $ticket = Ticket::where('opened_by',auth()->id());
-        $all = $ticket->get();
-        $open = $ticket->where('open',true)->get();
-        $escalated = $ticket->whereNotNull('escalated')->get();
-        $solved = $ticket->where('open',false)->get();
+        
+        
+        $all = count(Ticket::where('opened_by',auth()->id()));
+        // $open = $ticket->where('open',true)->get();
+        // $escalated = $ticket->whereNotNull('escalated')->get();
+        // $solved = $ticket->where('open',false)->get();
+        $open = 0;
+        $escalated = 0;
+        $solved = 0;
+
 
     }
 
