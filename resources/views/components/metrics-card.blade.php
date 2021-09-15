@@ -1,27 +1,13 @@
 <div {{ $attributes->merge(['class' => 'flex-1 bg-white p-3 rounded shadow-md self-center h-28 my-2 md:mb-0']) }}>
-
-                <div
-                  class="p-3 mr-4 text-orange-500 bg-gray-100 rounded-full "
-                >
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
-                    ></path>
-                  </svg>
-                </div>
-                <div>
-                  <p
-                    class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-                  >
-                    Total clients
-                  </p>
-                  <p
-                    class="text-lg font-semibold text-gray-700 dark:text-gray-200"
-                  >
-                    6389
-                  </p>
-                </div>
-
-                
-
+    <div class="flex flex-row">
+		<div class="h-20 w-20 mr-1 inline-flex items-center justify-center flex-shrink-0 text-green-500 bg-green-100 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>			
+		</div> 
+		<div class="flex-grow text-secondary">
+			<p class="text-base">Title</p>
+			<h3 class="text-2xl text-primary font-semibold">100</h3>
+		</div>
+	</div>	
 </div>
