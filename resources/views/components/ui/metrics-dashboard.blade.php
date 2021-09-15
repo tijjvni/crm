@@ -5,7 +5,7 @@
 		</div> 
 		<div class="flex-grow text-secondary">
 			<p class="text-base">{{$title}}</p>
-			<h3 class="text-2xl text-primary font-semibold">{{ $value }}</h3>
+			<h3 class="text-2xl text-primary font-semibold">{{$value}}</h3>
 		</div>
 	</div>	
 </div>

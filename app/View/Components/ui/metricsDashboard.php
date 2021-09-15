@@ -20,7 +20,7 @@ class metricsDashboard extends Component
     {
         $this->icon = $icon;
         $this->title = $title;
-        $this->value = $value;
+        dd($this->value = $value);
         $this->footer = $footer;
     }
 
