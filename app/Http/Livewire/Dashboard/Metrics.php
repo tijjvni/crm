@@ -20,8 +20,6 @@ class Metrics extends Component
         $open = $ticket->where('open',true)->count();
         $escalated = $ticket->whereNotNull('escalated')->count();
         $solved = $ticket->where('open',false)->count();
-
-        dd($all,$open,$escalated,$solved);
     }
 
 
