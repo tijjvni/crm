@@ -5,75 +5,38 @@
         </h2>
     </x-slot>
 
-<section class="px-4 py-12 mx-auto max-w-7xl bg-white">
+    
 
-  <div class="grid grid-cols-1 gap-5 md:grid-cols-4">
-    <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="mb-2 font-mono text-2xl font-light leading-none text-gray-900 truncate">23,455</h2>
-        <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
-            <path
-              fill-rule="evenodd"
-              d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span>40%</span>
-        </span>
-      </div>
-      <p class="text-sm leading-none text-gray-600">Posts</p>
-    </div>
-    <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="mb-2 font-mono text-2xl font-light leading-none text-gray-900 truncate">55</h2>
-        <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
-            <path
-              fill-rule="evenodd"
-              d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span>240%</span>
-        </span>
-      </div>
-      <p class="text-sm leading-none text-gray-600">Comments</p>
-    </div>
-    <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="mb-2 font-mono text-2xl font-light leading-none text-gray-900 truncate">129,752</h2>
-        <span class="flex items-center space-x-1 text-sm font-medium leading-none text-red-600">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
-            <path
-              fill-rule="evenodd"
-              d="M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span>22%</span>
-        </span>
-      </div>
-      <p class="text-sm leading-none text-gray-600">Activities</p>
-    </div>
-    <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="mb-2 font-mono text-2xl font-light leading-none text-gray-900 truncate">1,255</h2>
-        <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
-            <path
-              fill-rule="evenodd"
-              d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <span>10%</span>
-        </span>
-      </div>
-      <p class="text-sm leading-none text-gray-600">Users</p>
-    </div>
-  </div>
-</section>
+            <!-- Cards -->
+            <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+              <!-- Card -->
+              <div
+                class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+              >
+                <div
+                  class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p
+                    class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+                  >
+                    Total clients
+                  </p>
+                  <p
+                    class="text-lg font-semibold text-gray-700 dark:text-gray-200"
+                  >
+                    6389
+                  </p>
+                </div>
+              </div>
+              <!-- Card -->
+            </div>
 
 
     <div class="container w-full bg-white shadow rounded-sm mx-auto p-5">
