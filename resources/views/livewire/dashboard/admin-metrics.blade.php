@@ -14,17 +14,11 @@
                 <p class="text-lg text-gray">{{ count($tickets) }}</p>
             </div>
             <div class="flex p-2 bg-gray-50 text-primary h-8 rounded-b-md items-end">
-
                 <div class="flex items-center justify-between text-sm">
                     <div class="w-0 flex-1 flex items-center">
-                        <!-- Heroicon name: solid/paper-clip -->
-                        <i class="fa fa-plus"></i>
-                        <span class="ml-2 flex-1 w-0 truncate">
-                            Create new
-                        </span>
+                        <i class="fa fa-plus"></i> Create new
                     </div>    
                 </div>                
-
             </div>
         </div>        
         <div class=" flex-1 flex-col-1 divide-y divide-gray-light bg-white rounded-md shadow ">
@@ -33,17 +27,11 @@
                 <p class="text-lg text-gray">{{ count($admins) }}</p>
             </div>
             <div class="flex p-2 bg-gray-50 text-primary h-8 rounded-b-md items-end">
-
                 <div class="flex items-center justify-between text-sm">
                     <div class="w-0 flex-1 flex items-center">
-                        <!-- Heroicon name: solid/paper-clip -->
-                        <i class="fa fa-user"></i>
-                        <span class="ml-2 flex-1 w-0 truncate">
-                            Grant permission
-                        </span>
+                        <i class="fa fa-plus"></i> Create new
                     </div>    
                 </div>                
-
             </div>
         </div>
         <div class=" flex-1 flex-col-1 divide-y divide-gray-light bg-white rounded-md shadow ">
@@ -52,17 +40,12 @@
                 <p class="text-lg text-gray">{{ count($users) }}</p>
             </div>
             <div class="flex p-2 bg-gray-50 text-primary h-8 rounded-b-md items-end">
-
-            <div class="flex items-center justify-between text-sm">
+                <div class="flex items-center justify-between text-sm">
                     <div class="w-0 flex-1 flex items-center">
-                        <!-- Heroicon name: solid/paper-clip -->
-                        <i class="fa fa-eye-open"></i>
-                        <span class="ml-2 flex-1 w-0 truncate">
-                            View users
-                        </span>
+                        <i class="fa fa-plus"></i> Create new
                     </div>    
-                </div>     
-            </div>
+                </div>                
+            </div>       
 
         </div>
     </div>
