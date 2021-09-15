@@ -1,3 +1,3 @@
 <div>
-    @livewire('ticket-metrics')
+    @livewire('dashboard.ticket-metrics')
 </div>
