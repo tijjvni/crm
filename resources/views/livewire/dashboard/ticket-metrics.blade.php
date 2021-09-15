@@ -1,4 +1,4 @@
-<div class="flex-col">
+<div class="flex-col my-2">
     <div class="flex">
         <p class="text-lg text-gray">
             <i class="fa fa-user"></i> Tickets
