@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+use App\Http\Livewire\Tickets\Add;
+use App\Http\Livewire\Tickets\Ticket;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +26,14 @@ Route::get('/adminer', function () {
     return view('adminer');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    Route::prefix('tickets')->name('tickets.')->group(function () {
+        Route::get('/add',Add::class)->name('add');
+        Route::get('/{id}',Ticket::class)->name('ticket');
+    });
+});
