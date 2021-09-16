@@ -51,7 +51,7 @@
                                     Solved
                                 </span>
                             @endif
-                            @if($@endforelseticket->escalated)
+                            @if($ticket->escalated)
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-secondary-light text-primary">
                                     Escalated to: {{ $ticket->escalated->name }}
                                 </span>
