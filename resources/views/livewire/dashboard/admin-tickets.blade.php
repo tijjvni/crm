@@ -26,59 +26,60 @@
                 </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-                @forelse ($tickets as $ticket)
-                    <tr>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <div class="flex items-center">
-                                <div class="text-sm font-medium text-primary">
-                                    {{$ticket->subject}}
+                @if($tickets)
+                    @foreach ($tickets as $ticket)
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="text-sm font-medium text-primary">
+                                        {{$ticket->subject}}
+                                    </div>
+                                    <div class="text-sm text-gray">
+                                        {{ $ticket->openedBy->email }}
+                                    </div>
                                 </div>
-                                <div class="text-sm text-gray">
-                                    {{ $ticket->openedBy->email }}
-                                </div>
-                            </div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            <div class="text-sm text-gray">{{$ticket->ticketType->type}}</div>
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap">
-                            @if($ticket->open)
-                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-warning-light text-warning-dark">
-                                    Open
-                                </span>
-                            @else
-                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-success-light text-success-dark">
-                                    Solved
-                                </span>
-                            @endif
-                            @if($ticket->escalated)
-                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-secondary-light text-primary">
-                                    Escalated to: {{ $ticket->escalated->name }}
-                                </span>
-                            @endif
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                            {{ $ticket->created_at->diffForHumans() }}
-                        </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                            <a href="/ticket/{{$ticket->id}}" class="text-primary ">view</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">
-                            <div>
-                                {{ $tickets->links() }}
-                            </div>                            
-                        </td>
-                    </tr>
-
-                @empty 
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray">{{$ticket->ticketType->type}}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                @if($ticket->open)
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-warning-light text-warning-dark">
+                                        Open
+                                    </span>
+                                @else
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-success-light text-success-dark">
+                                        Solved
+                                    </span>
+                                @endif
+                                @if($ticket->escalated)
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-secondary-light text-primary">
+                                        Escalated to: {{ $ticket->escalated->name }}
+                                    </span>
+                                @endif
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ $ticket->created_at->diffForHumans() }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <a href="/ticket/{{$ticket->id}}" class="text-primary ">view</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <div>
+                                    {{ $tickets->links() }}
+                                </div>                            
+                            </td>
+                        </tr>
+                    @endforeach
+                @else
                     <tr>
                         <td colspan="5">
                             No ticket yet
                         </td>
                     </tr>
-                @endforelse
+                @endif
 
                 </tbody>
             </table>
