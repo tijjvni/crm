@@ -72,7 +72,7 @@
                         </td>
                     </tr>
 
-                @else 
+                @empty 
                     <tr>
                         <td colspan="5">
                             No ticket yet
