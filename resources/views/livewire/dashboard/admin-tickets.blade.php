@@ -26,7 +26,7 @@
                 </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-                @forelse($tickets as $ticket )
+                @forelse ($tickets as $ticket)
                     <tr>
                         <td class="px-6 py-4 whitespace-nowrap">
                             <div class="flex items-center">
@@ -51,7 +51,7 @@
                                     Solved
                                 </span>
                             @endif
-                            @if($ticket->escalated)
+                            @if($@endforelseticket->escalated)
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-secondary-light text-primary">
                                     Escalated to: {{ $ticket->escalated->name }}
                                 </span>
